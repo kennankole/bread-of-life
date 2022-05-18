@@ -14,7 +14,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,10 +24,10 @@ jobs:
         python-version: "3.8"
 
     - name: Install pipenv
-      uses: VaultVulp/action-pipenv@v2.0.1
+      uses: palewire/install-python-pipenv-pipfile@v2
       with:
-        command: install -d
-      
+        python-version: 3.8
+            
     - name: Run flake8
       run: |
         pipenv install flake8 pytest
