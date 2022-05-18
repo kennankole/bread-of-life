@@ -1,0 +1,7 @@
+.env.dev
+.env.prod
+.env.prod.db
+.dockerignore
+.pytest_cache/
+web/project/__pycache__
+web/.pytest_cache
