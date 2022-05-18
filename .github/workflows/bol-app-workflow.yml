@@ -32,7 +32,7 @@ jobs:
       uses: actions/cache@v1
       with: 
         path: ~/.local/share/virtualenvs
-        key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock')}}
+        key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
     
     - name: Install dependencies
       if: steps.cache-pipenv.outputs.cache-hit != 'true'
@@ -40,8 +40,9 @@ jobs:
         pipenv install --deploy --dev
 
     - name: Run flake8
+      run: |
         pipenv install flake8 pytest
-        if [ -f Pipfile* ]; then pipenv install --system --deploy install; fi
+        
     
     - name: Lint with flake8
       run: |
