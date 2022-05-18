@@ -3,16 +3,16 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+
 def create_app():
     app = Flask(__name__)
     app.config.from_object("project.config.Config")
     db.init_app(app)
     with app.app_context():
-        from project.routes import home 
+        from project.routes import home
         app.register_blueprint(home)
-        
-    return app
 
+    return app
 
 
 # app.config.from_object("project.config.Config")
