@@ -1,6 +1,7 @@
 import pytest
 from project import create_app
 
+
 @pytest.fixture()
 def application():
     app = create_app()

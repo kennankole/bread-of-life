@@ -1,4 +1,4 @@
-from pydoc import cli
+# from pydoc import cli
 from flask.cli import FlaskGroup
 from project import create_app, db
 
