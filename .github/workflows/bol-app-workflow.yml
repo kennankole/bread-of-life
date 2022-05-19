@@ -62,3 +62,4 @@ jobs:
         heroku_app_name: "bol-app"
         heroku_email : ${{ secrets.HEROKU_EMAIL }}
         usedocker: true
+        appdir: services/web
