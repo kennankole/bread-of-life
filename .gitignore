@@ -1,5 +1,5 @@
 .env.dev
-.env.prod
+env.prod
 .env.prod.db
 .dockerignore
 .pytest_cache/
