@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: ./services/web/Dockerfile.prod
+
+  
