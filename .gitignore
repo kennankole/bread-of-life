@@ -1,7 +1,8 @@
 .env.dev
-env.prod
-env.prod.db
+.env.prod
+.env.prod.db
 .dockerignore
 .pytest_cache/
-web/project/__pycache__
-web/.pytest_cache
+services/web/project/__pycache__
+services/web/.pytest_cache
+services/web/project/__pycache__/*
