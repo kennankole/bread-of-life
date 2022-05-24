@@ -6,5 +6,5 @@ setup:
 build:
   docker:
     web: ./services/web/Dockerfile.prod
+    worker: ./services/nginx/Dockerfile
 
-  
